@@ -4,6 +4,18 @@ public class Circle extends Shape implements Drawable{
 	
 	private int radius;
 	
+	public Circle() {
+	}
+	
+	public Circle(String color) {
+		super(color);
+	}
+
+	public Circle(int radius) {
+		super();
+		this.radius = radius;
+	}
+
 	public int getRadius() {
 		return radius;
 	}
@@ -18,6 +30,10 @@ public class Circle extends Shape implements Drawable{
 	@Override
 	public void draw() {
 		System.out.println("원을 그렸습니다.");		
+	}
+	@Override
+	public void draw(int count) {
+		System.out.println("원을 "+count+"개 그렸습니다.");
 	}
 	@Override
 	public void visible(boolean visible) {

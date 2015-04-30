@@ -28,6 +28,10 @@ public class Point implements Drawable,Visible{
 		System.out.println("좌표[x=" + x + ",y=" + y + "]에 점을 그렸습니다.");
 	}
 	@Override
+	public void draw(int count) {
+		System.out.println("좌표[x=" + x + ",y=" + y + "]에 점을"+count+"개 그렸습니다.");
+	}
+	@Override
 	public void visible(boolean visible) {
 		if(visible){
 			draw();

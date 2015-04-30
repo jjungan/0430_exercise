@@ -4,7 +4,13 @@ public class Triangle extends Shape implements Drawable{
 
 	private int height;
 	private int width;
-	
+	public Triangle() {
+	}
+	public Triangle(int height, int width) {
+		super();
+		this.height = height;
+		this.width = width;
+	}
 	public int getHeight() {
 		return height;
 	}
@@ -25,6 +31,10 @@ public class Triangle extends Shape implements Drawable{
 	@Override
 	public void draw() {
 		System.out.println("삼각형을 그렸습니다.");
+	}
+	@Override
+	public void draw(int count) {
+		System.out.println("삼각형을 "+count+"개 그렸습니다.");
 	}
 	@Override
 	public void visible(boolean visible) {
